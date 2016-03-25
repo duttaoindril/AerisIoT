@@ -5,6 +5,8 @@ var servolib = require('servo-pca9685');
 var sdcardlib = require('sdcard');
 var wifi = require('wifi-cc3000');
 
+//RFID A, servo B, BLE C, SDcard D
+
 var rfid = rfidlib.use(tessel.port['A']);
 var ble = blelib.use(tessel.port['B']);
 var servo = servolib.use(tessel.port['C']);
