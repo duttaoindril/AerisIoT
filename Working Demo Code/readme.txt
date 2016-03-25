@@ -37,3 +37,18 @@ Event Generation:
 
 Data Transport
     Analytics for Management
+
+4A 3B 6C 1D
+
+D A C
+
+D C B
+
+D A C
+
+D C B
+
+D A C
+
+D A C B
+

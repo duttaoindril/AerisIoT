@@ -8,5 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "rfid-pn532": "^0.1.9"
+  },
+  "devDependencies": {},
   "description": ""
 }
