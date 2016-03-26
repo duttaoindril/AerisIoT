@@ -2,7 +2,7 @@ import requests
 #Create Data Model - id : My First Data Model
 url = 'https://api.aercloud.aeris.com/v1/'+'Enter-your-accountId'+'/scls/dataModels'
 params = {"apiKey":"Enter-your-accountApiKey"}
-data = '{"id":"FirstDM","sclDataSchema":{"encodings":["JSON","CSV"],"parameters":[{"type":"STRING","name":"UID"}],"encoding":"JSON"},"name":"My First data Model"}'
+data = '{"id":"FirstDM","sclDataSchema":{"encodings":["JSON","CSV"],"parameters":[{"type":"STRING","name":"UID"}
 headers = {"Content-type": "application/json"}
 try:
  response = requests.post(url, params=params, data=data, headers=headers)
@@ -10,7 +10,7 @@ try:
  print "Data Model create - Status Code = ",response.status_code
  print "---------------------------------------------------------"
  if response.status_code == 200:
-   
+
    #Create Container - id : FirstContainer
    url = 'https://api.aercloud.aeris.com/v1/'+'Enter-your-accountId'+'/containers'
    params = {"apiKey":"Enter-your-accountApiKey"}
@@ -21,7 +21,7 @@ try:
    print "Container create - Status Code = ",response.status_code
    print "---------------------------------------------------------"
    if response.status_code == 200:
-    
+
     #Create Subscription - id : FirstSubs
     url = 'https://api.aercloud.aeris.com/v1/'+'Enter-your-accountId'+'/containers/subscriptions'
     params = {"apiKey":"Enter-your-accountApiKey"}
@@ -30,7 +30,7 @@ try:
     response = requests.post(url, params=params, data=data, headers=headers)
     print "---------------------------------------------------------"
     print "Subscription create - Status Code = ",response.status_code
-    print "---------------------------------------------------------" 
+    print "---------------------------------------------------------"
    else:
    	print "ERROR : Container Creation Failed. Please check for valid API Key and Account number"
  else:

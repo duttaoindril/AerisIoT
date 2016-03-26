@@ -10,6 +10,8 @@ Master API Key - cf88e244-eb00-11e5-9830-4bda0975d3a3
 
 https://api.aercloud.aeris.com/v1/16087/scls/dataModels?apiKey=cf88e244-eb00-11e5-9830-4bda0975d3a3
 
+https://api.aercloud.aeris.com/v1/16087/scls/f000da30-005a4742-4e7c2586/containers/SimpleBottle-Logs/contentInstances?apiKey=cf88e244-eb00-11e5-9830-4bda0975d3a3
+
 Emails:
 King Kong: natewkong@gmail.com 408-644-0444
 Atif Shah: aatif.de.shah@gmail.com 408-921-0496
@@ -37,3 +39,8 @@ Event Generation:
 
 Data Transport
     Analytics for Management
+
+Data Science
+    We could predict behavior - significant deviations send alerts
+    Profiling affects advertising
+

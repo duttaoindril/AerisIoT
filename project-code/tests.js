@@ -69,25 +69,21 @@ ble.on('connect', function(master) {
 });
 
 //SD Card Testing
-// var sdcard = sdcardlib.use(tessel.port['D']);
 
-// sdcard.use = true;
+var sdcard = sdcardlib.use(tessel.port['C']);
 
-// sdcard.on('ready', function() {
-//     sdcard.getFilesystems(function(err, fss) {
-//         console.log("SD Card "+err);
-//         console.log("SD Card Fss"+fss);
-//         console.log(sdcard.isPresent());
-//         var fs = fss[0];
-//         console.log('Writing...');
-//         fs.writeFile('pillBottle.json', 'Hey Tessel SDCard! Sticking Sample.json on you!', function(err) {
-//             console.log('Write complete. Reading...');
-//             fs.readFile('pillBottle.json', function(err, data) {
-//                 console.log('Read:\n', data.toString());
-//             });
-//         });
-//     });
-// });
+sdcard.on('ready', function() {
+  sdcard.getFilesystems(function(err, fss) {
+    var fs = fss[0];
+    console.log('Writing...');
+    fs.writeFile('someFile.txt', 'Hey Tessel SDCard!', function(err) {
+      console.log('Write complete. Reading...');
+      fs.readFile('someFile.txt', function(err, data) {
+        console.log('Read:\n', data.toString());
+      });
+    });
+  });
+});
 
 //Servo Testing
 var servo = servolib.use(tessel.port['C']);
