@@ -1,0 +1,41 @@
+{
+    "prescription": {
+        "patientID": "010267621",
+        "patientName": "Oindril Dutta",
+        "pillID": "Ac72Adarw7",
+        "pillName": "Famotidine",
+        "totalPills": 210,
+        "currentPills": 210,
+        "expiryDate": 1483228800,
+        "pillUse": "It can treat ulcers, gastroesophageal reflux disease (GERD), and conditions that cause excess stomach acid. It can also treat heartburn caused by acid indigestion.",
+        "sideEffects": "Constipation, diarrhea, or upset stomach. Headache or dizziness. Nausea or vomiting.",
+        "emergencyNum": 911,
+        "pharmaControlled": true,
+        "pillsInDay": 2,
+        "pharmaTimes": {
+            "hours": 4
+        },
+        "pillLock": true
+    },
+    "log": [{
+        "timestamp": 1458637041,
+        "give": false,
+        "take": false
+    }, {
+        "timestamp": 1458638041,
+        "give": true,
+        "take": true
+    }, {
+        "timestamp": 1458697041,
+        "give": true,
+        "take": false
+    }, {
+        "timestamp": 1458937041,
+        "give": false,
+        "take": false
+    }],
+    "abuse": [{
+        "timestamp": 1458937061,
+        "code": "003"
+    }]
+}

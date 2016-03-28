@@ -1,0 +1,17 @@
+{
+    "prescription": {
+        "totalPills": 200,
+        "currentPills": 200,
+        "pharmaControlled": true,
+        "pillsInDay": 2,
+        "pharmaTimes": {
+            "hours": 4
+        },
+        "pillLock": true
+    },
+    "log": [{
+        "timestamp": 1458637041,
+        "give": true,
+        "take": false
+    }]
+}
