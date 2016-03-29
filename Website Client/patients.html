@@ -10,9 +10,10 @@
     <nav>
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo center">SimpleBottle</a>
-            <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li onclick="logout()"><a class="waves-effect waves-light btn">Logout</a></li>
                 <img id="doc" src="img/doctor.png" class="circle responsive-img">
-            </ul> -->
+            </ul>
         </div>
     </nav>
     <div class="container">
@@ -21,15 +22,12 @@
             <h2 id="welcome" class="center-align"></h2>
             <h4 class="center-align">Here are your patients:</h4>
             <br>
-            <div id="patients" class="col s12 center-align">
-                <div class="card-panel hoverable center-align">
-
-                </div>
-            </div>
+            <div id="patients" class="col s12 center-align"></div>
         </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/aerPatients.js"></script>
 </body>
 </html>
