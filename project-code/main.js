@@ -27,7 +27,7 @@ function ledToggle() {
     led4.toggle();
 }
 
-var prescriptionD='{"prescription":{"patientID":"010267621","patientName":"Oindril Dutta","pillID":"Ac72Adarw7","pillName":"Famotidine","totalPills":50,"currentPills":50,"expiryDate":1459256880,"pillUse":"It can treat ulcers, gastroesophageal reflux disease (GERD), and conditions that cause excess stomach acid. It can also treat heartburn caused by acid indigestion.","sideEffects":"Constipation, diarrhea, or upset stomach. Headache or dizziness. Nausea or vomiting.","emergencyNum":911,"pillsInDay":2,"pharmaHours":'+(1/300)+'},"log":[]}';
+var prescriptionD='{"prescription":{"patientID":"010267621","patientName":"Oindril Dutta","pillID":"Ac72Adarw7","pillName":"Famotidine","totalPills":50,"currentPills":50,"expiryDate":1459256880,"pillUse":"It can treat ulcers, gastroesophageal reflux disease (GERD), and conditions that cause excess stomach acid. It can also treat heartburn caused by acid indigestion.","sideEffects":"Constipation, diarrhea, or upset stomach. Headache or dizziness. Nausea or vomiting.","emergencyNum":911,"pillsInDay":2,"pharmaHours":'+(1/300)+'},"log":[{"timestamp": '+Math.floor(Date.now()/1000)+',"give": false,"take": false}]}';
 var json = JSON.parse(prescriptionD.toString());
 //sendData("SimpleBottle-Prescriptions", '{"patientID":"010267621","patientName":"Oindril Dutta","pillID":"Ac72Adarw7","pillName":"Famotidine","totalPills":50,"currentPills":50,"expiryDate":1459256880,"pillUse":"It can treat ulcers, gastroesophageal reflux disease (GERD), and conditions that cause excess stomach acid. It can also treat heartburn caused by acid indigestion.","sideEffects":"Constipation, diarrhea, or upset stomach. Headache or dizziness. Nausea or vomiting.","emergencyNum":911,"pillsInDay":2,"pharmaHours":'+(1/300)+',"deviceID":"f000da30-005a4742-4e7c2586"}');
 //clear("SimpleBottle-Logs");
@@ -222,7 +222,9 @@ function getPill() {
                     latestPill = json["log"][i]["timestamp"];
                 }
             if(pillsTakenToday < json["prescription"]["pillsInDay"])
-                if(Math.floor(Date.now()/1000) - latestPill >= json["prescription"]["pharmaHours"]*3600)
+                if(Math.floor(Date.now()/1000) > 665280+json["log"][json["log"].length-1]["timestamp"])
+                    console.log("It's been a week since your last medication; please contact your physician to unlock the bottle.");
+                else if(Math.floor(Date.now()/1000) - latestPill >= json["prescription"]["pharmaHours"]*3600)
                     return true;
                 else
                     console.log("Please wait "+secondsToHms((latestPill+json["prescription"]["pharmaHours"]*3600) - Math.floor(Date.now()/1000))+" for your next pill.");
