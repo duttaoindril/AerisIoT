@@ -1,9 +1,4 @@
-function login() {
-    if($("#username").val() == "" || $("#username").val() == undefined || $("#password").val() == "" || $("#password").val() == undefined)
-        alert("Please enter your credentials!");
-    else
-        window.location.href = "patients.html?name="+$("#username").val();
-}
+$("#welcome").html("Hello Doctor "+getUrlParameter("name")+"!");
 
 $("#password").keyup(function(event) {
     if(event.keyCode == 13)
@@ -12,6 +7,13 @@ $("#password").keyup(function(event) {
 
 function logout() {
     window.location.href = "index.html";
+}
+
+function login() {
+    if($("#username").val() == "" || $("#username").val() == undefined || $("#password").val() == "" || $("#password").val() == undefined)
+        alert("Please enter your credentials!");
+    else
+        window.location.href = "patients.html?name="+$("#username").val();
 }
 
 function getUrlParameter(sParam) {
