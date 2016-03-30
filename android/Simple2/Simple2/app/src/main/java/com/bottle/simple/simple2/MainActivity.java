@@ -17,16 +17,22 @@ import com.bottle.simple.simple2.prescriptions;
 import com.bottle.simple.simple2.today;
 import com.bottle.simple.simple2.map;
 
+import org.json.JSONObject;
+
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private JSONObject data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //get JSON Data
+        //data =
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
