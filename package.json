@@ -1,0 +1,20 @@
+{
+  "name": "AerisIoT",
+  "version": "1.0.0",
+  "description": "Pill bottle\r --\r     Summary\r         //Use Cases - Together\r         //Problems it solves - Together\r     How it will work\r         Flow Diagram - Nate - Together\r     Design\r         Visual Design - Nate\r         Technical Design - Nate\r     Programming of Bottle (Tessel)\r         //MAKE DATA MODEL - Oindril\r         Translate Flow Diagram to Tessel Flow - Nate/Oindril\r         Code up module by module - Oindril\r         Put everything together - Oindril - Nate\r         Practice Demo Presentation - Together",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duttaoindril/AerisIoT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duttaoindril/AerisIoT/issues"
+  },
+  "homepage": "https://github.com/duttaoindril/AerisIoT#readme"
+}
