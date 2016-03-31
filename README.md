@@ -2,7 +2,6 @@
 
 ###Contact Info:
 #####King Kong: natewkong@gmail.com Phone: 408-644-0444
-#####Atif Shah: aatif.de.shah@gmail.com Phone: 408-921-0496
 #####Oindril Dutta: duttaoindril@gmail.com Phone: 408-658-8961
 
 Pill bottle
@@ -25,17 +24,14 @@ Pill bottle
 Cloud End
 --
     //MAKE DATA MODEL - Oindril - Together
-    Connect Tessel to AerCloud - Aatif
-    Send data to Cloud when available - Aatif
+    Connect Tessel to AerCloud - Oindril
+    Send data to Cloud when available - Oindril
     Client
-        Website First - Business End - Aatif
-        Android App - Consumer End - Oindril/Nate
-        Android App - Business End - Bleh
+        Website First - Business End - Oindril
 
-CREATE PRESENTATION - Together
+CREATE PRESENTATION - Nate
 --
 
-EDGE CASES - Aatifz
 --
 
 Life Cycle
