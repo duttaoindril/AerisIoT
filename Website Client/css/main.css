@@ -18,6 +18,18 @@ nav {
     margin-right: 12px;
 }
 
+#green {
+	color:#00E676;
+}
+
+#red{
+	color:#EF5350;
+}
+
+#yellow {
+	color:#ffca28;
+}
+
 .hoverable {
     cursor: pointer;
 }
